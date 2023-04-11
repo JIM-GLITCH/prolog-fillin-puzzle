@@ -68,7 +68,9 @@ countGround([H|T],Count):-
 /*
 sortByNumOfGroundTerms(+L,-SortedL)
 Sort by the number of groud terms in the slot
-from smallest to largest
+from smallest to largest then reverse to put 
+the slot at first which has most number of groud 
+terms 
 */
 sortByNumOfGroundTerms(L1,L2):-
     sortByKeyFunc(countGround,L1,L3),
